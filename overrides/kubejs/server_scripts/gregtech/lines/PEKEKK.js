@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('terephthalic_acid')
         .notConsumable('64x gtceu:double_titanium_plate')
         .itemInputs('gtceu:cobalt_manganese_bromide_dust')
-        .inputFluids('gtceu:para_xylene 1000', 'gtceu:acetic_acid 2000', 'gtceu:oxygen 2000')
+        .inputFluids('gtceu:dimethylbenzene 1000', 'gtceu:acetic_acid 2000', 'gtceu:oxygen 2000')
         .outputFluids('gtceu:terephthalic_acid 1000', 'minecraft:water 2000')
         .duration(900)
         .EUt(GTValues.VA[GTValues.EV])
