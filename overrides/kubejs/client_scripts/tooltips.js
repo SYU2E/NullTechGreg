@@ -1,0 +1,11 @@
+ItemEvents.tooltip(tooltip => {
+    tooltip.addAdvanced("kubejs:mutated_processor_mainframe", (item, adv, text) => { text.add(1, Text.darkGreen(Text.translatable("item.kubejs.uev_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:mutated_processor_computer", (item, adv, text) => { text.add(1, Text.darkGreen(Text.translatable("item.kubejs.uhv_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:mutated_processor_assembly", (item, adv, text) => { text.add(1, Text.darkGreen(Text.translatable("item.kubejs.uv_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:mutated_processor", (item, adv, text) => { text.add(1, Text.darkGreen(Text.translatable("item.kubejs.zpm_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:mutatedchip_processor", (item, adv, text) => { text.add(1, Text.darkGreen(Text.translatable("item.kubejs.iv_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:null_processor_mainframe", (item, adv, text) => { text.add(1, Text.darkPurple(Text.translatable("item.kubejs.uiv_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:null_processor_computer", (item, adv, text) => { text.add(1, Text.darkPurple(Text.translatable("item.kubejs.uev_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:null_processor_assembly", (item, adv, text) => { text.add(1, Text.darkPurple(Text.translatable("item.kubejs.uhv_tier_circuit"))) })
+    tooltip.addAdvanced("kubejs:null_processor", (item, adv, text) => { text.add(1, Text.darkPurple(Text.translatable("item.kubejs.uv_tier_circuit"))) })
+})

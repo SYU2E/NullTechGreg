@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
 
         event.replaceInput({ type: 'gtceu:assembly_line', output: /fusion/},'gtceu:double_osmiridium_plate', '7x gtceu:dense_osmiridium_plate')
         event.replaceInput({ type: 'gtceu:assembly_line', output: /fusion/},'gtceu:double_plutonium_241_plate', '7x gtceu:dense_netherite_plate')
-
+        event.replaceInput({ type: 'gtceu:assembly_line'},'gtceu:soldering_alloy', 'gtceu:germanium_solder')
         
     }
 )

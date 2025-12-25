@@ -1,0 +1,15 @@
+{
+    "item.kubejs.hv_tier_circuit": "HV-Tier Circuit",
+    "item.kubejs.ev_tier_circuit": "EV-Tier Circuit",
+    "item.kubejs.iv_tier_circuit": "IV-Tier Circuit",
+    "item.kubejs.luv_tier_circuit": "LuV-Tier Circuit",
+    "item.kubejs.zpm_tier_circuit": "ZPM-Tier Circuit",
+    "item.kubejs.uv_tier_circuit": "UV-Tier Circuit",
+    "item.kubejs.uhv_tier_circuit": "UHV-Tier Circuit",
+    "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
+    "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
+    "item.kubejs.umv_tier_circuit": "UMV-Tier Circuit",
+    "item.kubejs.uxv_tier_circuit": "UXV-Tier Circuit",
+    "item.kubejs.opv_tier_circuit": "OpV-Tier Circuit",
+    "item.kubejs.max_tier_circuit": "MAX-Tier Circuit"
+}
