@@ -1,0 +1,60 @@
+ServerEvents.recipes(event => {
+    
+    event.recipes.gtceu.component_assembler(('drive'))
+        .itemInputs('8x gtceu:applidium_plate', '2x ae2:engineering_processor', '2x #gtceu:circuits/mv', '2x #ae2:glass_cable')
+        .itemOutputs('ae2:drive')
+        .inputFluids('gtceu:soldering_alloy 288', 'gtceu:polyethylene 288')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.component_assembler(('terminal'))
+        .itemInputs('#ae2:illuminated_panel', 'ae2:logic_processor', 'ae2:annihilation_core', 'ae2:formation_core', '2x #gtceu:circuits/mv')
+        .itemOutputs('ae2:terminal')
+        .inputFluids('gtceu:soldering_alloy 288', 'gtceu:polyethylene 288')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.component_assembler(('crafting_terminal'))
+        .itemInputs('ae2:terminal', '2x ae2:calculation_processor', '2x gtceu:hv_sensor', '2x #gtceu:circuits/ev', 'minecraft:crafting_table')
+        .itemOutputs('ae2:crafting_terminal')
+        .inputFluids('gtceu:soldering_alloy 288', 'gtceu:polytetrafluoroethylene 288')
+        .duration(4800)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.component_assembler(('pattern_encoding_terminal'))
+        .itemInputs('2x ae2:crafting_terminal', '4x ae2:engineering_processor', '2x gtceu:ev_sensor', '2x #gtceu:circuits/luv', 'minecraft:crafting_table')
+        .itemOutputs('ae2:pattern_encoding_terminal')
+        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polytetrafluoroethylene 1152')
+        .duration(4800)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.component_assembler(('molecular_assembler'))
+        .itemInputs('gtceu:ev_assembler', 'ae2:crafting_terminal', '4x ae2:logic_processor', '4x ae2:formation_core', '2x gtceu:ev_field_generator', '2x #gtceu:circuits/luv')
+        .itemOutputs('ae2:molecular_assembler')
+        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152', 'gtceu:glass 576')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.component_assembler(('controller'))
+        .itemInputs('8x gtceu:double_applidium_plate', '2x ae2:engineering_processor', '4x #gtceu:circuits/mv', '2x #ae2:glass_cable')
+        .itemOutputs('ae2:controller')
+        .inputFluids('gtceu:soldering_alloy 288', 'gtceu:polyethylene 288', 'gtceu:glass 576')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.component_assembler(('interface'))
+        .itemInputs('4x gtceu:applidium_plate', 'ae2:annihilation_core', 'ae2:formation_core', '#gtceu:circuits/mv', '2x #ae2:glass_cable')
+        .itemOutputs('ae2:interface')
+        .inputFluids('gtceu:soldering_alloy 288', 'gtceu:glass 288')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.component_assembler(('pattern_provider'))
+        .itemInputs('8x gtceu:applidium_plate', '2x ae2:interface', 'ae2:annihilation_core', 'ae2:formation_core', '#gtceu:circuits/ev', '4x #ae2:glass_cable')
+        .itemOutputs('ae2:pattern_provider')
+        .inputFluids('gtceu:soldering_alloy 576', 'gtceu:glass 576')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.HV])
+        
+    }
+)

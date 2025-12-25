@@ -1,0 +1,68 @@
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.electric_blast_furnace(('blast_cupronickel'))
+        .itemInputs('gtceu:cupronickel_dust')
+        .itemOutputs('gtceu:cupronickel_ingot')
+        .circuit(1)
+        .blastFurnaceTemp(1200)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.electric_blast_furnace(('blast_brass'))
+        .itemInputs('gtceu:brass_dust')
+        .itemOutputs('gtceu:brass_ingot')
+        .circuit(1)
+        .blastFurnaceTemp(1160)
+        .duration(560)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.electric_blast_furnace(('blast_tin_alloy'))
+        .itemInputs('gtceu:tin_alloy_dust')
+        .itemOutputs('gtceu:tin_alloy_ingot')
+        .circuit(1)
+        .blastFurnaceTemp(1258)
+        .duration(560)
+        .EUt(GTValues.VA[GTValues.MV])
+        
+    event.recipes.gtceu.chemical_bath(('magnesium_diboride_cool_down'))
+        .itemInputs('gtceu:hot_magnesium_diboride_ingot')
+        .itemOutputs('gtceu:magnesium_diboride_ingot')
+        .inputFluids('minecraft:water 1000')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.MV])
+        
+    event.recipes.gtceu.chemical_bath(('magnesium_diboride_cool_down_distilled_water'))
+        .itemInputs('gtceu:hot_magnesium_diboride_ingot')
+        .itemOutputs('gtceu:magnesium_diboride_ingot')
+        .inputFluids('gtceu:distilled_water 1000')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+        event.replaceInput({ type: 'gtceu:circuit_assembler', output: /gtceu:nano/},'gtceu:nano_cpu_chip', 'kubejs:prismaric_cpu_chip')
+        event.replaceInput({ type: 'gtceu:circuit_assembler', output: /gtceu:nano/},'gtceu:aluminium_frame', 'gtceu:prismarine_frame')
+    event.recipes.gtceu.forming_press(('dense_red_alloy_manganese_phosphide_magnesium_diboride_mercury_barium_calcium_cuprate_uranium_triplatinum_samarium_iron_arsenic_oxide_lower_superconducting_alloy_plate'))
+        .itemInputs('gtceu:red_alloy_plate', '2x gtceu:manganese_phosphide_plate', '2x gtceu:magnesium_diboride_plate', '2x gtceu:mercury_barium_calcium_cuprate_plate', '2x gtceu:uranium_triplatinum_plate', '2x gtceu:samarium_iron_arsenic_oxide_plate')
+        .itemOutputs('gtceu:dense_red_alloy_manganese_phosphide_magnesium_diboride_mercury_barium_calcium_cuprate_uranium_triplatinum_samarium_iron_arsenic_oxide_lower_superconducting_alloy_plate')
+        .duration(901)
+        .EUt(5001)
+
+        event.remove({ output: 'gtceu:qbit_cpu_wafer' })
+    event.recipes.gtceu.large_chemical_reactor(('qbt_cpu_wafer_radon'))
+        .itemInputs('kubejs:prismaric_cpu_wafer', 'gtceu:indium_gallium_phosphide_dust','gtceu:thorium_232_dust')
+        .itemOutputs('gtceu:qbit_cpu_wafer')
+        .inputFluids('gtceu:radon 50')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.large_chemical_reactor(('qbt_cpu_wafer_quantum_eye'))
+        .itemInputs('kubejs:prismaric_cpu_wafer', '2x gtceu:quantum_eye','gtceu:thorium_232_dust')
+        .itemOutputs('gtceu:qbit_cpu_wafer')
+        .inputFluids('gtceu:gallium_arsenide 288')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.EV])
+
+        event.replaceInput({ type: 'gtceu:assembly_line', output: /fusion/},'gtceu:double_osmiridium_plate', '7x gtceu:dense_osmiridium_plate')
+        event.replaceInput({ type: 'gtceu:assembly_line', output: /fusion/},'gtceu:double_plutonium_241_plate', '7x gtceu:dense_netherite_plate')
+
+        
+    }
+)

@@ -21,3 +21,8 @@
 #!minecraft/config/<directory>
 
 # 他に追加したい時はここに書く
+# export file
+!manifest.json
+!modlist.html
+!overrides/config/**
+!overrides/kubejs/**

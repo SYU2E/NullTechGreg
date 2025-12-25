@@ -1,0 +1,151 @@
+{
+  "minecraft": {
+    "version": "1.20.1",
+    "modLoaders": [
+      {
+        "id": "forge-47.4.9",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "NullTechGreg",
+  "version": "0.0.2",
+  "author": "",
+  "files": [
+    {
+      "projectID": 289412,
+      "fileID": 7260736,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 416294,
+      "fileID": 6186971,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 324717,
+      "fileID": 6855440,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 1235020,
+      "fileID": 7233829,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 1017786,
+      "fileID": 5613251,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 272335,
+      "fileID": 7180783,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 238222,
+      "fileID": 7361881,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 419699,
+      "fileID": 5137938,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 1173950,
+      "fileID": 7127447,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 633483,
+      "fileID": 6828054,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 404465,
+      "fileID": 7296748,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 238086,
+      "fileID": 5853326,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 556861,
+      "fileID": 6702553,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 1008510,
+      "fileID": 6925239,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 985872,
+      "fileID": 7032439,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 223794,
+      "fileID": 7148487,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 444699,
+      "fileID": 5840405,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 348521,
+      "fileID": 5729105,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 890405,
+      "fileID": 7227109,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 287342,
+      "fileID": 5468426,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 984851,
+      "fileID": 6842815,
+      "required": true,
+      "isLocked": false
+    },
+    {
+      "projectID": 404468,
+      "fileID": 6130786,
+      "required": true,
+      "isLocked": false
+    }
+  ],
+  "overrides": "overrides"
+}

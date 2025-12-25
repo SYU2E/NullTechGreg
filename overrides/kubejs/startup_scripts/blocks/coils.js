@@ -1,0 +1,12 @@
+StartupEvents.registry('block', event => {
+    event.create('electrum_coil_block', 'gtceu:coil')
+        .temperature(1285)
+        .level(0)
+        .energyDiscount(1) // (1)
+        .tier(0)
+        .coilMaterial(() => GTMaterials.Electrum)
+        .texture('kubejs:block/coils/electrum_coil')
+        .hardness(2)
+        .requiresTool(true)
+        .soundType('metal')
+})
