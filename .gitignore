@@ -1,0 +1,23 @@
+/instance.cfg
+
+# 一旦全部無視
+*
+!*/
+
+# Git
+!.gitignore
+!*.gitignore
+!.gitattributes
+
+# ?
+!.packignore
+!LISENCE
+!README.md
+
+# Kubejs
+!minecraft/kubejs/**
+
+# Configs
+#!minecraft/config/<directory>
+
+# 他に追加したい時はここに書く
