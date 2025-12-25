@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.neutron_activator(('mutatedchip_processor'))
         .inputFluids('gtceu:radium 1250')
         .chancedInput('kubejs:mugatenic_light', 200, 0)
-        .itemInputs('gtceu:wetware_processor', '12x gtceu:advanced_smd_resistor','6x gtceu:rad_away_pill', '6x gtceu:paracetamol_pill', '4x gtceu:naquadria_bolt')
+        .itemInputs('gtceu:wetware_processor', '6x gtceu:advanced_smd_resistor', '6x gtceu:advanced_smd_capacitor', '6x gtceu:rad_away_pill', '6x gtceu:paracetamol_pill', '4x gtceu:naquadria_bolt')
         .chancedOutput('kubejs:mutatedchip_processor', 3000, 0)
         .chancedOutput('kubejs:mutatedchip_processor', 3000, 0)
         .chancedOutput('kubejs:mutatedchip_processor', 3000, 0)
@@ -16,6 +16,90 @@ ServerEvents.recipes(event => {
         .duration(5400)
         .addCondition(GTNNRecipes.setNA(400, 380))
 
-        
+    event.recipes.gtceu.circuit_assembler(('mutated_processor'))
+        .inputFluids('gtceu:germanium_solder 72')
+        .itemInputs('kubejs:mutated_processing_unit', '3x kubejs:mutatedchip_processor', 'gtceu:qbit_cpu_chip', '12x gtceu:advanced_smd_capacitor', '12x gtceu:advanced_smd_transistor', '16x gtceu:fine_americium_wire')
+        .itemOutputs('kubejs:mutated_processor')
+        .duration(1600)
+        .EUt(150000)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler(('mutated_processor_csmd'))
+        .inputFluids('gtceu:germanium_solder 72')
+        .itemInputs('kubejs:mutated_processing_unit', '3x kubejs:mutatedchip_processor', 'gtceu:qbit_cpu_chip', '3x kubejs:complex_smd_capacitor', '3x kubejs:complex_smd_transistor', '16x gtceu:fine_americium_wire')
+        .itemOutputs('kubejs:mutated_processor')
+        .duration(400)
+        .EUt(150000)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler(('mutated_processor_assembly'))
+        .inputFluids('gtceu:germanium_solder 144')
+        .itemInputs('kubejs:bio_printed_circuit_board', '2x kubejs:mutated_processor', '16x gtceu:advanced_smd_inductor', '24x gtceu:advanced_smd_capacitor', '4x kubejs:stram_chip', '32x gtceu:fine_americium_wire')
+        .itemOutputs('2x kubejs:mutated_processor_assembly')
+        .duration(3200)
+        .EUt(150000)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler(('mutated_processor_assembly_csmd'))
+        .inputFluids('gtceu:germanium_solder 144')
+        .itemInputs('kubejs:bio_printed_circuit_board', '2x kubejs:mutated_processor', '4x kubejs:complex_smd_inductor', '6x kubejs:complex_smd_capacitor', '4x kubejs:stram_chip', '32x gtceu:fine_americium_wire')
+        .itemOutputs('2x kubejs:mutated_processor_assembly')
+        .duration(800)
+        .EUt(150000)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.assembly_line(('mutated_processor_computer'))
+        .inputFluids('gtceu:germanium_solder 144')
+        .itemInputs('kubejs:bio_printed_circuit_board', '2x kubejs:mutated_processor_assembly', '24x gtceu:advanced_smd_diode', '32x gtceu:nor_memory_chip', '64x gtceu:nand_memory_chip', '8x kubejs:stram_chip', '48x gtceu:fine_americium_wire', '8x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '2x gtceu:neutronium_plate')
+        .itemOutputs('kubejs:mutated_processor_computer')
+        .duration(3600)
+        .EUt(256000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:mutated_processor_assembly'))
+                .EUt(GTValues.VA[GTValues.UEV])
+                .CWUt(64)
+            )
+
+    event.recipes.gtceu.assembly_line(('mutated_processor_computer_csmd'))
+        .inputFluids('gtceu:germanium_solder 144')
+        .itemInputs('kubejs:bio_printed_circuit_board', '2x kubejs:mutated_processor_assembly', '6x kubejs:complex_smd_diode', '32x gtceu:nor_memory_chip', '64x gtceu:nand_memory_chip', '8x kubejs:stram_chip', '48x gtceu:fine_americium_wire', '8x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '2x gtceu:neutronium_plate')
+        .itemOutputs('kubejs:mutated_processor_computer')
+        .duration(900)
+        .EUt(256000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:mutated_processor_assembly'))
+                .EUt(GTValues.VA[GTValues.UEV])
+                .CWUt(64)
+            )
+
+    event.recipes.gtceu.assembly_line(('mutated_processor_mainframe'))
+        .inputFluids('gtceu:germanium_solder 144')
+        .itemInputs('4x gtceu:neutronium_frame', '2x kubejs:uhv_containment_forge_panel', '2x kubejs:mutated_processor_computer', '16x kubejs:stram_chip', '4x kubejs:uepic_chip', '48x gtceu:advanced_smd_inductor', '64x gtceu:advanced_smd_capacitor', '48x gtceu:advanced_smd_diode', '48x gtceu:advanced_smd_resistor', '48x gtceu:advanced_smd_transistor', '48x gtceu:fine_americium_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_double_wire', 'gtceu:uv_electric_pump', '4x gtceu:neutronium_plate')
+        .itemOutputs('kubejs:mutated_processor_mainframe')
+        .duration(16000)
+        .EUt(1800000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:mutated_processor_computer'))
+                .EUt(GTValues.VA[GTValues.UEV])
+                .CWUt(128)
+            )
+
+    event.recipes.gtceu.assembly_line(('mutated_processor_mainframe_csmd'))
+        .inputFluids('gtceu:germanium_solder 144')
+        .itemInputs('4x gtceu:neutronium_frame', '2x kubejs:uhv_containment_forge_panel', '2x kubejs:mutated_processor_computer', '16x kubejs:stram_chip', '4x kubejs:uepic_chip', '12x kubejs:complex_smd_inductor', '16x kubejs:complex_smd_capacitor', '12x kubejs:complex_smd_diode', '12x kubejs:complex_smd_resistor', '12x kubejs:complex_smd_transistor', '48x gtceu:fine_americium_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_double_wire', 'gtceu:uv_electric_pump', '4x gtceu:neutronium_plate')
+        .itemOutputs('kubejs:mutated_processor_mainframe')
+        .duration(4000)
+        .EUt(1800000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:mutated_processor_computer'))
+                .EUt(GTValues.VA[GTValues.UEV])
+                .CWUt(128)
+            )
     }
+
+    
 )

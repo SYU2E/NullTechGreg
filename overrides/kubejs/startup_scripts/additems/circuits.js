@@ -1,7 +1,7 @@
 StartupEvents.registry("item", event => {
   event.create("complex_smd_transistor")
   event.create("complex_smd_resistor")
-  event.create("complex_smd_capasitor")
+  event.create("complex_smd_capacitor")
   event.create("complex_smd_diode")
   event.create("complex_smd_inductor")
   event.create("uepic_wafer")
