@@ -110,5 +110,10 @@ event.create('pyrrolysine')//22
     .color(0xFFFFFF)
     }
 )
+
 GTCEuStartupEvents.materialModification(event => {
+})
+
+StartupEvents.registry("item", event => {
+  event.create("steve_cell")
 })
