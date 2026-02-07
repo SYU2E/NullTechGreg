@@ -48,16 +48,16 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.chemical_reactor('fluoroboric_acid')
-        .itemInputs('gtceu:boric_acid_dust')
+        .itemInputs('7x gtceu:boric_acid_dust')
         .inputFluids('gtceu:hydrofluoric_acid 4000')
         .outputFluids('gtceu:fluoroboric_acid 1000', 'minecraft:water 3000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor('boric_acid')
-        .itemInputs('gtceu:borax_dust')
+        .itemInputs('5x gtceu:borax_dust')
         .inputFluids('gtceu:hydrochloric_acid 2000')
-        .itemOutputs('4x gtceu:boric_acid_dust', '2x gtceu:salt_dust')
+        .itemOutputs('7x gtceu:boric_acid_dust', '2x gtceu:salt_dust')
         .outputFluids('minecraft:water 5000')
         .duration(30)
         .EUt(GTValues.VA[GTValues.MV])
@@ -106,15 +106,15 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('iv_hydroxybenzoic_acid')
         .inputFluids('gtceu:sulfuric_acid 1000')
-        .itemInputs('gtceu:potassium_phenoxide_dust')
+        .itemInputs('16x gtceu:potassium_phenoxide_dust')
         .outputFluids('gtceu:iv_hydroxybenzoic_acid 1000', 'gtceu:diluted_sulfuric_acid 1000')
         .duration(80)
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.chemical_reactor('potassium_phenoxide')
         .inputFluids('gtceu:phenol 1000', 'gtceu:carbon_dioxide 16000')
-        .itemInputs('gtceu:potassium_hydroxide_dust')
-        .itemOutputs('gtceu:potassium_phenoxide_dust')
+        .itemInputs('6x gtceu:potassium_hydroxide_dust')
+        .itemOutputs('16x gtceu:potassium_phenoxide_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
