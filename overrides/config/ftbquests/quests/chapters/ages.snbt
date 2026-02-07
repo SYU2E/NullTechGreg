@@ -4235,6 +4235,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["3F34BF94ACEDC078"]
 			id: "6107AAC6190B3CCE"
 			tasks: [{
 				id: "0A6D057BE0803CC8"
@@ -4336,6 +4337,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["3BA09ACF14218B23"]
 			id: "4EEDDF01102AA694"
 			tasks: [{
 				id: "35CC899E320C4FBE"
@@ -4346,6 +4348,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["4EEDDF01102AA694"]
 			id: "57EEEFE108F05F10"
 			tasks: [{
 				id: "40271B33E3772DAB"
@@ -4356,6 +4359,7 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["57EEEFE108F05F10"]
 			id: "36484DDD4FA15DBD"
 			tasks: [{
 				id: "21028695466A803B"
@@ -4366,6 +4370,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["36484DDD4FA15DBD"]
 			id: "0EDB0BF0BA285808"
 			tasks: [{
 				id: "69173EE9482EC0D7"
@@ -4376,6 +4381,7 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["3BA09ACF14218B23"]
 			id: "52BE7A26CD1731B4"
 			tasks: [{
 				id: "1F0DF6B7820887AC"
@@ -4386,6 +4392,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["52BE7A26CD1731B4"]
 			id: "1AC7F9F9CEFAC673"
 			tasks: [{
 				id: "10E5AE5A68D82042"
@@ -4396,6 +4403,7 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["1AC7F9F9CEFAC673"]
 			id: "0309E2A48CEFB4EE"
 			tasks: [{
 				id: "3790BBF9736E2AD4"
@@ -4406,6 +4414,7 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["0309E2A48CEFB4EE"]
 			id: "53CF18FBB74658D5"
 			tasks: [{
 				id: "2C9EB5DA13B62C49"
@@ -4416,6 +4425,7 @@
 			y: -10.5d
 		}
 		{
+			dependencies: ["3F50EAAC8F602A01"]
 			id: "0664C53D6345E192"
 			tasks: [{
 				id: "2D62780A0C3F19A2"
@@ -4426,6 +4436,10 @@
 			y: -11.0d
 		}
 		{
+			dependencies: [
+				"53CF18FBB74658D5"
+				"0664C53D6345E192"
+			]
 			id: "0FD11AD60DE5AD48"
 			tasks: [{
 				id: "22ABEE086D52F794"
@@ -4436,6 +4450,7 @@
 			y: -11.5d
 		}
 		{
+			dependencies: ["0FD11AD60DE5AD48"]
 			id: "64139F3703E307E7"
 			tasks: [{
 				id: "311FA021F1B61CE3"
@@ -4446,6 +4461,7 @@
 			y: -12.5d
 		}
 		{
+			dependencies: ["67DCA3CB16F1A491"]
 			icon: "gtceu:oxygen_difluoride_bucket"
 			id: "3F50EAAC8F602A01"
 			tasks: [{
@@ -4457,6 +4473,10 @@
 			y: -10.0d
 		}
 		{
+			dependencies: [
+				"1BFCF9A8BF242FF0"
+				"1D36B88F7F7FA2D1"
+			]
 			id: "67DCA3CB16F1A491"
 			tasks: [{
 				id: "70A15CFDF411A53A"
@@ -4477,6 +4497,7 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["1AC7F9F9CEFAC673"]
 			id: "1D36B88F7F7FA2D1"
 			tasks: [{
 				id: "71BEA66D8C27CE55"
@@ -4487,6 +4508,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["381DBE3BDDDB54CF"]
 			id: "747CE0E2B8383C5B"
 			tasks: [{
 				id: "2F5DEF5FECA27BD8"
@@ -4497,6 +4519,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["747CE0E2B8383C5B"]
 			icon: "gtceu:enriched_naquadic_mysterious_netherrack_mixture_bucket"
 			id: "38A7A7E7E6D66575"
 			tasks: [{
@@ -4508,6 +4531,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["38A7A7E7E6D66575"]
 			icon: "gtceu:enriched_mysterious_netherrack_mixture_bucket"
 			id: "152CE79EDE2EAEF8"
 			tasks: [{
@@ -4519,6 +4543,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["152CE79EDE2EAEF8"]
 			icon: "gtceu:enriched_netherrack_crystal_slurry_bucket"
 			id: "6BA9A7D412E9ABAF"
 			tasks: [{
@@ -4530,6 +4555,10 @@
 			y: -3.0d
 		}
 		{
+			dependencies: [
+				"6BA9A7D412E9ABAF"
+				"274183DB2B3ED678"
+			]
 			id: "503ADA11ACC09BCB"
 			tasks: [{
 				id: "2628D41B2635FAAA"
@@ -4550,6 +4579,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["152CE79EDE2EAEF8"]
 			icon: "gtceu:wriggle_netherrack_bucket"
 			id: "3A1E119A75E3FB13"
 			tasks: [{
@@ -4561,6 +4591,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["3A1E119A75E3FB13"]
 			icon: "gtceu:salty_wriggle_netherrack_bucket"
 			id: "657C9618E1338234"
 			tasks: [{
@@ -4572,6 +4603,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["657C9618E1338234"]
 			id: "7CE515C81B8E6BBA"
 			tasks: [{
 				id: "0C30970B08ED7D3A"
@@ -4588,10 +4620,14 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -4.5d
+			x: -11.0d
+			y: -5.5d
 		}
 		{
+			dependencies: [
+				"7CE515C81B8E6BBA"
+				"1F5CF65538BD516A"
+			]
 			id: "22CCA62146421D99"
 			tasks: [{
 				id: "1E07CCBB658FCA9E"
@@ -4602,6 +4638,10 @@
 			y: -5.0d
 		}
 		{
+			dependencies: [
+				"7CE515C81B8E6BBA"
+				"1F5CF65538BD516A"
+			]
 			icon: "gtceu:soul_netherrack_tear_mixture_bucket"
 			id: "5ACA7E2743595C1A"
 			tasks: [{
@@ -4613,6 +4653,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["5ACA7E2743595C1A"]
 			icon: "gtceu:lava_oozed_soul_netherrack_tear_mixture_bucket"
 			id: "2EB04A69C0B0D682"
 			tasks: [{
@@ -4624,6 +4665,7 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["2EB04A69C0B0D682"]
 			id: "0CC99B1F9D115989"
 			tasks: [{
 				id: "070F90153F204E3B"
